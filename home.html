@@ -27,20 +27,22 @@
                 <div class="divider"></div>
                 <div class="grid grid-cols-3 gap-4 mb-7">
                     <button id="add-money" class="btn btn-lg w-[123px] h-[90px]">Add Money</button>
-                    <button class="btn btn-lg w-[123px] h-[90px]">Cash Out</button>
+                    <button id="cashout-btn" class="btn btn-lg w-[123px] h-[90px]">Cash Out</button>
                     <button class="btn btn-lg w-[123px] h-[90px]">Transfer Money</button>
                     <button class="btn btn-lg w-[123px] h-[90px]">Get Bonus</button>
                     <button class="btn btn-lg w-[123px] h-[90px]">Pay Bill</button>
                     <button class="btn btn-lg w-[123px] h-[90px]">Transaction</button>
                     
                 </div>
-                <div id="addmoney-form" class="invisible">
+                <!-- send money form -->
+                <div id="addmoney-form" class="hidden">
                     <form class="card-body">
+                        <h1 class="text-3xl font-black">Add Money</h3>
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text">Amount</span>
                         </label>
-                        <input id="addmoney-amount" type="Text" placeholder="Your amount" autocomplete="off" class="input input-bordered" required />
+                        <input id="addmoney-amount" type="Text" placeholder="Your amount" autocomplete="off" class="input input-bordered" required/>
                       </div>
                       <div class="form-control">
                         <label class="label">
@@ -53,10 +55,40 @@
                       </div>
                     </form>
                   </div>
+
+                  <!-- cash out form -->
+                  <div id="cashout-form" class="hidden">
+                    <form class="card-body">
+                        <h1 class="text-3xl font-black">Cash Out</h3>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="cashout-amount" type="Text" placeholder="Your amount" autocomplete="off" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Agent Number</span>
+                        </label>
+                        <input id="agent-number" type="Text" placeholder="Type Agent Number" autocomplete="off" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="cashout-pin" type="password" placeholder="Your Pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-cashout" class="btn btn-primary">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+                  
               </div>
             </div>
         </div>
     </main>
     <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
 </body>
 </html>
