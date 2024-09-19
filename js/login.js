@@ -7,11 +7,15 @@ document.getElementById('btn-login').addEventListener('click', function (event) 
 
     //step-3 get value form the input field//
     const phoneNumber = document.getElementById('phone-number').value;
-    console.log(phoneNumber);
 
-    const pin = document.getElementById('pin-number').value;
-    console.log(pin);
+    const pinNumber = document.getElementById('pin-number').value;
 
     //step-4 match the number and the pin//
-
+    if(phoneNumber === '01724680597' && pinNumber === '11223'){
+        console.log('You are logged in.')
+        window.location.href = '/home.html'
+    }
+    else{
+        alert('Wrong phone number or pin');
+    }
 })

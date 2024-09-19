@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="flex justify-center items-start">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-5">
+                <div class="flex justify-between gap-36 items-center">
+                    <div class="stats shadow w-36">
+                        <div class="stat">
+                          <div class="text-xs">Available Balance</div>
+                          <div class="text2xl font-black">$<span id="available-balance">9400</span></div>
+                        </div>
+                        
+                      </div>
+    
+                      <button class="btn outline outline-1 outline-gray-700">Logout</button>
+                </div>
+                <div class="divider"></div>
+                <div class="grid grid-cols-3 gap-4 mb-7">
+                    <button id="add-money" class="btn btn-lg w-[123px] h-[90px]">Add Money</button>
+                    <button class="btn btn-lg w-[123px] h-[90px]">Cash Out</button>
+                    <button class="btn btn-lg w-[123px] h-[90px]">Transfer Money</button>
+                    <button class="btn btn-lg w-[123px] h-[90px]">Get Bonus</button>
+                    <button class="btn btn-lg w-[123px] h-[90px]">Pay Bill</button>
+                    <button class="btn btn-lg w-[123px] h-[90px]">Transaction</button>
+                    
+                </div>
+                <div id="addmoney-form" class="invisible">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="addmoney-amount" type="Text" placeholder="Your amount" autocomplete="off" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="addmoney-pin" type="password" placeholder="Your Pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/home.js"></script>
+</body>
+</html>
