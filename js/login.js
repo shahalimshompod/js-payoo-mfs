@@ -13,7 +13,7 @@ document.getElementById('btn-login').addEventListener('click', function (event) 
     //step-4 match the number and the pin//
     if(phoneNumber === '01724680597' && pinNumber === '11223'){
         console.log('You are logged in.')
-        window.location.href = '/indexx.html'
+        window.location.href = '/js/index.html'
     }
     else{
         alert('Wrong phone number or pin');
